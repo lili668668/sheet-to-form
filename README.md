@@ -8,8 +8,16 @@
 
 ## 您可以建立這個 Sheet 的副本
 
+![](https://i.imgur.com/Cn2eiuO.png)
+
 ## 使用副本上方的「製作表單」的選單，建立表單
+
+![](https://i.imgur.com/o8eDS7x.png)
 
 ## 若您的 Sheet 沒有此選單，請自行使用「指令碼編輯器」，從這份程式碼 copy 過去
 
+![](https://i.imgur.com/lpFQZzb.png)
+
 ## Notice: 由於程式碼本身沒有上架與經過 Google 商店驗證，所以會跳出警告視窗，可忽略他
+
+
