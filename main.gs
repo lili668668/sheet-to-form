@@ -27,12 +27,12 @@ function makeForm () {
       sections.push(items)
       continue;
     }
-    
+
     if (sheet.getName().split('Ignore').length >= 2) {
       sections.push(items)
       continue;
     }
-       
+
     if (!titleSetted) {
       form.setTitle(getValue(sheet, 'B1'))
         .setDescription(getValue(sheet, 'B2'));
@@ -45,7 +45,7 @@ function makeForm () {
       sections[cnt - 1].push(pageBreakItem);
       sectionMap[sheet.getName()] = pageBreakItem;
     }
-    
+
     var list = sheet.getRange('A5:A').getValues();
     for (var cnt2 = 0;cnt2 < list.length;cnt2++) {
       var type = list[cnt2][0]
@@ -223,10 +223,10 @@ function makeForm () {
           items.push(null);
       }
     }
-    
+
     sections.push(items);
   }
-  
+
   for (var cnt = 0;cnt < sheets.length;cnt++) {
     var sheet = sheets[cnt]
     if (sheet.getName() == 'setting' || sheet.getName().split('Ignore').length >= 2) continue;
@@ -235,7 +235,7 @@ function makeForm () {
       pageBreakItem.setGoToPage(getPageBreakItem(getValue(sheet, 'B3'), sectionMap));
     }
   }
-  
+
   for (var cnt = 0;cnt < sheets.length;cnt++) {
     var sheet = sheets[cnt]
     if (sheet.getName() == 'setting' || sheet.getName().split('Ignore').length >= 2) continue;
@@ -262,10 +262,10 @@ function makeForm () {
       }
     }
   }
-  
+
   SpreadsheetApp.getUi().alert('表單：' + form.getEditUrl());
   settingSheet = spreadsheet.getSheetByName('setting');
-  settingSheet.getRange(settingSheet.getActiveRange().getLastRow() + 1, 1).setValue('（自動產生）產生過的表單：' + form.getEditUrl());
+  settingSheet.getRange(settingSheet.getLastRow() + 1, 1).setValue('（自動產生）產生過的表單：' + form.getEditUrl());
 }
 
 function getPageBreakItem (key, sectionMap) {
