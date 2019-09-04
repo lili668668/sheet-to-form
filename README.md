@@ -18,6 +18,6 @@
 
 ![](https://i.imgur.com/lpFQZzb.png)
 
-## Notice: 由於程式碼本身沒有上架與經過 Google 商店驗證，所以會跳出警告視窗，可忽略他
+## Notice: 由於程式碼本身沒有上架與經過 Google 商店驗證，所以會跳出警告視窗，可以允許與了解風險後繼續
 
 
